@@ -1,0 +1,12 @@
+{
+  "id": 183976475665319231,
+  "name": "init",
+  "sounds": ["hub_floating_ball.amsound"],
+  "switch_containers": [],
+  "collections": [],
+  "events": ["start_hub_intro.amevent"],
+  "attenuators": ["impact.amattenuation"],
+  "switches": [],
+  "rtpc": [],
+  "effects": []
+}

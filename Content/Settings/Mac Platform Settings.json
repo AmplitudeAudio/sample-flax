@@ -1,0 +1,16 @@
+{
+	"ID": "aa8bc05f4e235361da45b99dbb93e665",
+	"TypeName": "FlaxEditor.Content.Settings.MacPlatformSettings",
+	"EngineBuild": 7011,
+	"Data": {
+	"CodeSignIdentity": null,
+	"PackageKeychainProfile": null,
+	"WindowMode": 0,
+	"ScreenWidth": 1280,
+	"ScreenHeight": 720,
+	"ResizableWindow": false,
+	"RunInBackground": false,
+	"AppIdentifier": "com.${COMPANY_NAME}.${PROJECT_NAME}",
+	"OverrideIcon": null
+}
+}

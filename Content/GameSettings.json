@@ -1,0 +1,42 @@
+{
+	"ID": "a67d05bd4c0c32fb5cafb6ad87f11465",
+	"TypeName": "FlaxEditor.Content.Settings.GameSettings",
+	"EngineBuild": 7012,
+	"Data": {
+	"ProductName": "Amplitude Audio Flax Sample",
+	"CompanyName": "Sparky Studios",
+	"CopyrightNotice": null,
+	"Version": null,
+	"Icon": "5c7cf3fa44983ceb4b44b99d9e750ebe",
+	"FirstScene": "b32e41e947cae7a6b727909c4d199f9a",
+	"NoSplashScreen": false,
+	"SplashScreen": null,
+	"Time": "5b1e98e64298c6caa319f0b0a8f708e9",
+	"Audio": "6f3a1fad4be3fb84be030a86b0e74118",
+	"LayersAndTags": "ba5f2e234fa7cb7b7f99bf96ccdf0909",
+	"Physics": "06449d9c46012605e4d56bb5e3d2fd7c",
+	"Input": "9d6752164e168f96f9317aa69b92aa57",
+	"Graphics": "de79791d459c870b8942ba9b6ca3fc8a",
+	"Network": "209e6c4146d63b531cc1a792ae8a1b6a",
+	"Navigation": "597b155c45bf82fda734d397295380dc",
+	"Localization": "43387f204f7913390d3b3a97cb9bc099",
+	"GameCooking": "498902ab457918ee8c4446b8b377f4d4",
+	"Streaming": "39d3a39b48ad421a98cf2095dfaeb9cb",
+	"CustomSettings": {
+		"Audio System": null,
+		"Amplitude Settings": "116bb1004cd9de2a19c1c68da8f8aef7"
+	},
+	"WindowsPlatform": "172d2e374d4f129305b2ffa6ffd8a114",
+	"UWPPlatform": null,
+	"LinuxPlatform": "a1e4b0ce4c44716ed0c457afbf1c6726",
+	"PS4Platform": null,
+	"XboxOnePlatform": null,
+	"XboxScarlettPlatform": null,
+	"AndroidPlatform": "0e6114ea41d145730d73a1aa9ee780a8",
+	"SwitchPlatform": null,
+	"PS5Platform": null,
+	"MacPlatform": "aa8bc05f4e235361da45b99dbb93e665",
+	"iOSPlatform": "e67a48774b1da08e9b045eb07ef4c410",
+	"WebPlatform": "62d04b664d2d95d743f9328b88713be5"
+}
+}

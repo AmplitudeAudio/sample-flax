@@ -1,0 +1,54 @@
+{
+	"ID": "ba5f2e234fa7cb7b7f99bf96ccdf0909",
+	"TypeName": "FlaxEditor.Content.Settings.LayersAndTagsSettings",
+	"EngineBuild": 7012,
+	"Data": {
+	"Tags": [
+		"Player"
+	],
+	"Layers": [
+		"Default",
+		"Player",
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null
+	],
+	"TerrainLayers": [
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null
+	]
+}
+}

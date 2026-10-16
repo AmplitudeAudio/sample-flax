@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "name": "impact",
+  "max_distance": 1024,
+  "shape": {
+    "zone_type": "Sphere",
+    "zone": {
+      "inner": { "radius": 512 },
+      "outer": { "radius": 786 }
+    },
+    "max_attenuation_factor": 0.125
+  },
+  "gain_curve": {
+    "parts": [
+      {
+        "start": { "x": 0, "y": 1 },
+        "end": { "x": 50, "y": 0 },
+        "fader": "Linear"
+      }
+    ]
+  },
+  "air_absorption": { "enabled": false, "coefficients": [] }
+}

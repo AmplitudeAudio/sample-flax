@@ -1,0 +1,24 @@
+{
+  "attenuation": 1,
+  "bus": 1,
+  "effect": 0,
+  "fader": "Linear",
+  "gain": {
+    "kind": "Static",
+    "value": 1.0
+  },
+  "id": 97945395518707218,
+  "loop": {
+    "enabled": true,
+    "loop_count": 0
+  },
+  "name": "hub_floating_ball",
+  "path": "614211__szegvari__atmo-vocal-choir-drone-synth-dark-thriller-sad-mood-cinematic.wav",
+  "priority": {
+    "kind": "Static",
+    "value": 255.0
+  },
+  "scope": "Entity",
+  "spatialization": "HRTF",
+  "stream": true
+}

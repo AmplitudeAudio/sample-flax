@@ -1,0 +1,17 @@
+{
+	"Name": "Amplitude Audio Flax Demo",
+	"Version": "1.0",
+	"Company": "Sparky Studios",
+	"Copyright": "© Sparky Studios. All Rights Reserved.",
+	"GameTarget": "GameTarget",
+	"EditorTarget": "GameEditorTarget",
+	"References": [
+		{
+			"Name": "$(EnginePath)/Flax.flaxproj"
+		},
+		{
+			"Name": "$(ProjectPath)/Plugins/AmplitudeAudio/AmplitudeAudio.flaxproj"
+		}
+	],
+	"MinEngineVersion": "1.13.7011"
+}

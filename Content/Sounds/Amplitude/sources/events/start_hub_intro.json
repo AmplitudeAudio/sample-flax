@@ -1,0 +1,15 @@
+{
+  "actions": [
+    {
+      "active": true,
+      "scope": "Entity",
+      "targets": [
+        97945395518707218
+      ],
+      "type": "Play"
+    }
+  ],
+  "id": 325538012769467821,
+  "name": "start_hub_intro",
+  "run_mode": "Parallel"
+}

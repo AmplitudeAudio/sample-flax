@@ -1,0 +1,274 @@
+{
+	"ID": "b32e41e947cae7a6b727909c4d199f9a",
+	"TypeName": "FlaxEngine.SceneAsset",
+	"EngineBuild": 7012,
+	"Data": [
+		{
+			"ID": "b32e41e947cae7a6b727909c4d199f9a",
+			"TypeName": "FlaxEngine.Scene",
+			"LightmapSettings": {
+				"IndirectLightingIntensity": 1.0,
+				"GlobalObjectsScale": 1.0,
+				"ChartsPadding": 2,
+				"AtlasSize": 1024,
+				"BounceCount": 2,
+				"CompressLightmaps": true,
+				"UseGeometryWithNoMaterials": true,
+				"Quality": 10
+			}
+		},
+		{
+			"ID": "8d5e5eca4d2095318c792481842c8ac1",
+			"TypeName": "Game.ExitOnEsc",
+			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
+			"V": {}
+		},
+		{
+			"ID": "65803ae24944a03d8420e69047693c42",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
+			"Name": "AudioWorld"
+		},
+		{
+			"ID": "2416617544a0ef09f3bf3786c9d5f792",
+			"TypeName": "AmplitudeAudio.AmplitudeSoundBank",
+			"ParentID": "65803ae24944a03d8420e69047693c42",
+			"Bank": {
+				"File": "init.ambank"
+			}
+		},
+		{
+			"ID": "a631e76b4035056d94098a8046fdf02e",
+			"TypeName": "FlaxEngine.DirectionalLight",
+			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
+			"Name": "Sun",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 160.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.3826834559440613,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9238795042037964
+				}
+			}
+		},
+		{
+			"ID": "e628092b45bc3354f8c5929f7276025f",
+			"TypeName": "FlaxEngine.Sky",
+			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 150.0,
+					"Z": 0.0
+				}
+			},
+			"Sun": "a631e76b4035056d94098a8046fdf02e"
+		},
+		{
+			"ID": "5d7fea2d4e743ca4acfde9b5ab10756b",
+			"TypeName": "FlaxEngine.SkyLight",
+			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
+			"Name": "SkyLight",
+			"Brightness": 2.5,
+			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
+		},
+		{
+			"ID": "ae2955dd45938ece185cf2a8eb69b475",
+			"TypeName": "FlaxEngine.Camera",
+			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
+			"Name": "Camera",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 150.0,
+					"Z": -300.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "a64ef5824dd02770593509926f666344",
+			"TypeName": "AmplitudeAudio.AmplitudeListener",
+			"ParentID": "ae2955dd45938ece185cf2a8eb69b475",
+			"Name": "Audio Listener",
+			"StaticFlags": 0,
+			"Directivity": 0.5,
+			"Sharpness": 0.0
+		},
+		{
+			"ID": "90e216904eb9f77bcefb0eaaf50b63a6",
+			"TypeName": "FlaxEngine.CharacterController",
+			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
+			"Name": "Player",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 207.2335662841797,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "66fa2d974da0e1006d654daee76b1db2",
+			"TypeName": "Game.Player",
+			"ParentID": "90e216904eb9f77bcefb0eaaf50b63a6",
+			"V": {
+	"PlayerController": "90e216904eb9f77bcefb0eaaf50b63a6",
+	"CameraTarget": "baeb301441b9df63d96c9583d6898d35",
+	"Camera": "ae2955dd45938ece185cf2a8eb69b475"
+}
+		},
+		{
+			"ID": "baeb301441b9df63d96c9583d6898d35",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "90e216904eb9f77bcefb0eaaf50b63a6",
+			"Name": "CameraTarget",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 75.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "de97797140f3237a32564b8e96fe838c",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
+			"Name": "BoxBrush",
+			"Size": {
+				"X": 4000.0,
+				"Y": 300.0,
+				"Z": 4000.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "72bcfe0d43480d285a47148ee8cbdab3",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "de97797140f3237a32564b8e96fe838c",
+			"Name": "BoxBrush1",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 27.0,
+					"Z": 0.0
+				}
+			},
+			"Mode": 1,
+			"Size": {
+				"X": 3900.0,
+				"Y": 300.0,
+				"Z": 3900.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "5bbc73f948660c2dc880fe9d717289d2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
+			"Name": "CSG.Model",
+			"HideFlags": 4,
+			"Model": "d37cb7164ff16452df17468df966f823",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "313819f4495141dfe7e10999a59615ca",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
+			"Name": "CSG.Collider",
+			"HideFlags": 4,
+			"CollisionData": "f073ff714d185cb573a470a6f8635f2a"
+		},
+		{
+			"ID": "8f16ceaf452c9d13077098bb5d128f85",
+			"TypeName": "AmplitudeAudio.AmplitudeObstruction",
+			"ParentID": "313819f4495141dfe7e10999a59615ca"
+		},
+		{
+			"ID": "8addee9e44dd1897144884bdfd06a543",
+			"TypeName": "AmplitudeAudio.AmplitudeEntity",
+			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
+			"Name": "HubFloatingSphere",
+			"Transform": {
+				"Translation": {
+					"X": 2046.8404541015625,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"ObstructionMode": 2
+		},
+		{
+			"ID": "c798e41041453c17e88252a837c8244b",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "8addee9e44dd1897144884bdfd06a543",
+			"Name": "Model",
+			"StaticFlags": 0,
+			"Model": "e573d5ca49210c5230e55ea7405519c8",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "85bdfe384bfa7baa7204b9b47b105c2b",
+			"TypeName": "AmplitudeAudio.AmplitudeEmitter",
+			"ParentID": "c798e41041453c17e88252a837c8244b",
+			"Name": "hub_floating_ball",
+			"SoundObject": {
+				"ID": 97945395518707218
+			},
+			"AutoPlay": 2
+		},
+		{
+			"ID": "03d8937e4d063f41230d60aa806a6439",
+			"TypeName": "AmplitudeAudio.AmplitudeEvent",
+			"ParentID": "c798e41041453c17e88252a837c8244b",
+			"Enabled": false,
+			"Event": {
+				"ID": 325538012769467821
+			},
+			"AutoTrigger": 2,
+			"CancelOnDisable": false
+		}
+	]
+}
