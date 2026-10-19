@@ -23,6 +23,17 @@
 			],
 			"Plugins": null,
 			"PluginSearchPaths": null
+		},
+		{
+			"Platform": 10,
+			"EngineConfigFile": "pc.config.amconfig",
+			"InitSoundBanks": [
+				{
+					"File": "init.ambank"
+				}
+			],
+			"Plugins": null,
+			"PluginSearchPaths": null
 		}
 	],
 	"PackagingMode": 1,

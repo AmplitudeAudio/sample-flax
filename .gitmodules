@@ -1,0 +1,3 @@
+[submodule "AmplitudeAudio"]
+	path = Plugins/AmplitudeAudio
+	url = https://github.com/AmplitudeAudio/integration-flax

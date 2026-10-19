@@ -6,14 +6,18 @@
     "format": "Float32"
   },
   "mixer": {
-    "panning_mode": "Stereo",
+    "panning_mode": "BinauralHighQuality",
     "active_channels": 50,
     "virtual_channels": 100,
     "pipeline": "pc.ampipeline"
   },
+  "hrtf": {
+    "amir_file": "data/ir.amir"
+  },
   "game": {
     "listener_fetch_mode": "Default",
     "track_environments": true,
+    "track_rooms": true,
     "listeners": 1,
     "entities": 4096,
     "environments": 512,

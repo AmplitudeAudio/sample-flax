@@ -1,0 +1,45 @@
+{
+	"ID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 7012,
+	"Data": [
+	{
+		"ID": "6a5916949644a6efca52f1ac25bbaae1",
+		"TypeName": "AmplitudeAudio.AmplitudeEntity",
+		"Name": "FloatingSphereRoom",
+		"StaticFlags": 0,
+		"Directivity": 0.0,
+		"ObstructionMode": 2,
+		"ObstructionLayers": 4294967293
+	},
+	{
+		"ID": "a0ad7d74ea40aae737b62085aff6980e",
+		"TypeName": "AmplitudeAudio.AmplitudeEmitter",
+		"ParentID": "6a5916949644a6efca52f1ac25bbaae1",
+		"Name": "choir",
+		"SoundObject": {
+			"ID": 97945395518707218
+		},
+		"AutoPlay": 2,
+		"Spatialization": 1
+	},
+	{
+		"ID": "534c41ef474e3a38f1ecfcb8c9680af5",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "6a5916949644a6efca52f1ac25bbaae1",
+		"Name": "Model",
+		"StaticFlags": 0,
+		"Model": "e573d5ca49210c5230e55ea7405519c8",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}

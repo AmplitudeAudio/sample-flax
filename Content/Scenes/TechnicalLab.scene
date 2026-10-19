@@ -15,6 +15,11 @@
 				"CompressLightmaps": true,
 				"UseGeometryWithNoMaterials": true,
 				"Quality": 10
+			},
+			"CSG": {
+				"Model": "d37cb7164ff16452df17468df966f823",
+				"Data": "0ede5a8a4d1f63d540ce1db64a2121bd",
+				"CollisionData": "f073ff714d185cb573a470a6f8635f2a"
 			}
 		},
 		{
@@ -24,15 +29,15 @@
 			"V": {}
 		},
 		{
-			"ID": "65803ae24944a03d8420e69047693c42",
+			"ID": "24feb7595348dc61a094cfbdb7e2d0d7",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
 			"Name": "AudioWorld"
 		},
 		{
-			"ID": "2416617544a0ef09f3bf3786c9d5f792",
+			"ID": "3e16501946e9466d60a4c4af184f8aca",
 			"TypeName": "AmplitudeAudio.AmplitudeSoundBank",
-			"ParentID": "65803ae24944a03d8420e69047693c42",
+			"ParentID": "24feb7595348dc61a094cfbdb7e2d0d7",
 			"Bank": {
 				"File": "init.ambank"
 			}
@@ -113,7 +118,8 @@
 					"Z": 0.0
 				}
 			},
-			"StaticFlags": 0
+			"StaticFlags": 0,
+			"Layer": 1
 		},
 		{
 			"ID": "66fa2d974da0e1006d654daee76b1db2",
@@ -137,17 +143,23 @@
 					"Z": 0.0
 				}
 			},
-			"StaticFlags": 0
+			"StaticFlags": 0,
+			"Layer": 1
 		},
 		{
 			"ID": "de97797140f3237a32564b8e96fe838c",
 			"TypeName": "FlaxEngine.BoxBrush",
 			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
 			"Name": "BoxBrush",
+			"Center": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": -350.0
+			},
 			"Size": {
 				"X": 4000.0,
 				"Y": 300.0,
-				"Z": 4000.0
+				"Z": 10000.0
 			},
 			"Surfaces": [
 				{},
@@ -171,10 +183,15 @@
 				}
 			},
 			"Mode": 1,
+			"Center": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": -350.0
+			},
 			"Size": {
 				"X": 3900.0,
 				"Y": 300.0,
-				"Z": 3900.0
+				"Z": 9900.0
 			},
 			"Surfaces": [
 				{},
@@ -184,6 +201,1401 @@
 				{},
 				{}
 			]
+		},
+		{
+			"ID": "7438e08e4468685abed1a2b3fd0e1afe",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "de97797140f3237a32564b8e96fe838c",
+			"Name": "Room1",
+			"Transform": {
+				"Translation": {
+					"X": 1500.0,
+					"Y": 0.0,
+					"Z": 4100.0
+				}
+			},
+			"Center": {
+				"X": 0.0,
+				"Y": 176.38775634765625,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "83fab9c74e552f5e09be8e89ea301c6e",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "7438e08e4468685abed1a2b3fd0e1afe",
+			"Name": "Door",
+			"Transform": {
+				"Translation": {
+					"X": -470.1524658203125,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Mode": 1,
+			"Size": {
+				"X": 100.0,
+				"Y": 300.0,
+				"Z": 150.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "7947cc7a4212e5576f7edaa10ea6136b",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "7438e08e4468685abed1a2b3fd0e1afe",
+			"Name": "Walls",
+			"Mode": 1,
+			"Center": {
+				"X": 0.0,
+				"Y": 164.91676330566406,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 900.0,
+				"Y": 575.717529296875,
+				"Z": 900.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "5e4413e64cf92f80cf4fa0876f3f3305",
+			"TypeName": "AmplitudeAudio.AmplitudeRoom",
+			"ParentID": "7438e08e4468685abed1a2b3fd0e1afe",
+			"Name": "RoomInstance1",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 176.5582733154297,
+					"Z": 0.0
+				}
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"LeftWall": 0,
+			"RightWall": 0,
+			"Floor": 0,
+			"Ceiling": 0,
+			"FrontWall": 0,
+			"BackWall": 0
+		},
+		{
+			"ID": "f8e58a2af54a1cc521e73389ba58a47f",
+			"TypeName": "FlaxEngine.TextRender",
+			"ParentID": "7438e08e4468685abed1a2b3fd0e1afe",
+			"Name": "RoomName",
+			"Transform": {
+				"Translation": {
+					"X": -500.0958251953125,
+					"Y": 207.2628173828125,
+					"Z": -1.299560546875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				}
+			},
+			"Text": "Transparent",
+			"Color": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "4508d98f4aa1f0bd59362b81d47e38f4"
+		},
+		{
+			"ID": "196e3393a740aa027eb866ad325adde2",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "6a5916949644a6efca52f1ac25bbaae1",
+			"ParentID": "7438e08e4468685abed1a2b3fd0e1afe"
+		},
+		{
+			"ID": "4755457a034a27870a947dbacc7d6a78",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "a0ad7d74ea40aae737b62085aff6980e",
+			"ParentID": "196e3393a740aa027eb866ad325adde2"
+		},
+		{
+			"ID": "c798e41041453c17e88252a837c8244b",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "534c41ef474e3a38f1ecfcb8c9680af5",
+			"ParentID": "196e3393a740aa027eb866ad325adde2"
+		},
+		{
+			"ID": "a1fb68e243452cf9d4e31893e649e518",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "de97797140f3237a32564b8e96fe838c",
+			"Name": "Room2",
+			"Transform": {
+				"Translation": {
+					"X": 1500.0,
+					"Y": 0.0,
+					"Z": 3050.0
+				}
+			},
+			"Center": {
+				"X": 0.0,
+				"Y": 176.38775634765625,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "6fcd1bb443f00b72b907b3b63a6ebb6a",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "a1fb68e243452cf9d4e31893e649e518",
+			"Name": "Door",
+			"Transform": {
+				"Translation": {
+					"X": -470.1524658203125,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Mode": 1,
+			"Size": {
+				"X": 100.0,
+				"Y": 300.0,
+				"Z": 150.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "70e1f2b54ce198d6ed0ace94b0ddf337",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "a1fb68e243452cf9d4e31893e649e518",
+			"Name": "Walls",
+			"Mode": 1,
+			"Center": {
+				"X": 0.0,
+				"Y": 164.91676330566406,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 900.0,
+				"Y": 575.717529296875,
+				"Z": 900.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "cc5a64b845778ccc7523339e72a0035c",
+			"TypeName": "AmplitudeAudio.AmplitudeRoom",
+			"ParentID": "a1fb68e243452cf9d4e31893e649e518",
+			"Name": "RoomInstance2",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 176.5582733154297,
+					"Z": 0.0
+				}
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"LeftWall": 1,
+			"RightWall": 1,
+			"Floor": 1,
+			"Ceiling": 1,
+			"FrontWall": 1,
+			"BackWall": 1
+		},
+		{
+			"ID": "037cacfa45ed5641eb0655a6766ad413",
+			"TypeName": "FlaxEngine.TextRender",
+			"ParentID": "a1fb68e243452cf9d4e31893e649e518",
+			"Name": "RoomName",
+			"Transform": {
+				"Translation": {
+					"X": -500.0958251953125,
+					"Y": 207.2628173828125,
+					"Z": -1.299560546875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				}
+			},
+			"Text": "Acoustic Tile",
+			"Color": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "4508d98f4aa1f0bd59362b81d47e38f4"
+		},
+		{
+			"ID": "a0da1e02c449e74c9713a88d1f93f808",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "6a5916949644a6efca52f1ac25bbaae1",
+			"ParentID": "a1fb68e243452cf9d4e31893e649e518",
+			"Name": "FloatingSphereRoom2",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "cdb54c14e64236fd3175f28bcd0390bf",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "a0ad7d74ea40aae737b62085aff6980e",
+			"ParentID": "a0da1e02c449e74c9713a88d1f93f808"
+		},
+		{
+			"ID": "70d2a19c22499d9faebe2eaee935af16",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "534c41ef474e3a38f1ecfcb8c9680af5",
+			"ParentID": "a0da1e02c449e74c9713a88d1f93f808",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "f510e533418201ff00c69294cdbd5f45",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "de97797140f3237a32564b8e96fe838c",
+			"Name": "Room3",
+			"Transform": {
+				"Translation": {
+					"X": 1500.0,
+					"Y": 0.0,
+					"Z": 2000.0
+				}
+			},
+			"Center": {
+				"X": 0.0,
+				"Y": 176.38775634765625,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "3473e36b4db1408e9a695cb8be0cefff",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "f510e533418201ff00c69294cdbd5f45",
+			"Name": "Door",
+			"Transform": {
+				"Translation": {
+					"X": -470.1524658203125,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Mode": 1,
+			"Size": {
+				"X": 100.0,
+				"Y": 300.0,
+				"Z": 150.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "fefbb8da46d5afd1fcb09c96a7fc8940",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "f510e533418201ff00c69294cdbd5f45",
+			"Name": "Walls",
+			"Mode": 1,
+			"Center": {
+				"X": 0.0,
+				"Y": 164.91676330566406,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 900.0,
+				"Y": 575.717529296875,
+				"Z": 900.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "2056724a46751f238674c8bd18cbb027",
+			"TypeName": "AmplitudeAudio.AmplitudeRoom",
+			"ParentID": "f510e533418201ff00c69294cdbd5f45",
+			"Name": "RoomInstance3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 176.5582733154297,
+					"Z": 0.0
+				}
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"LeftWall": 2,
+			"RightWall": 2,
+			"Floor": 2,
+			"Ceiling": 2,
+			"FrontWall": 2,
+			"BackWall": 2
+		},
+		{
+			"ID": "74d99c4344fc300e26be9aa09b92229c",
+			"TypeName": "FlaxEngine.TextRender",
+			"ParentID": "f510e533418201ff00c69294cdbd5f45",
+			"Name": "RoomName",
+			"Transform": {
+				"Translation": {
+					"X": -500.0958251953125,
+					"Y": 207.2628173828125,
+					"Z": -1.299560546875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				}
+			},
+			"Text": "Carpet on Concrete",
+			"Color": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "4508d98f4aa1f0bd59362b81d47e38f4"
+		},
+		{
+			"ID": "76fb514bc144ec88b19d4ebdbf5e1f5f",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "6a5916949644a6efca52f1ac25bbaae1",
+			"ParentID": "f510e533418201ff00c69294cdbd5f45",
+			"Name": "FloatingSphereRoom3",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "d507c2bc3c4a10a32ef2c189a3f0d0b0",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "a0ad7d74ea40aae737b62085aff6980e",
+			"ParentID": "76fb514bc144ec88b19d4ebdbf5e1f5f"
+		},
+		{
+			"ID": "33dd76453640ea95857f1b9cf92afdf5",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "534c41ef474e3a38f1ecfcb8c9680af5",
+			"ParentID": "76fb514bc144ec88b19d4ebdbf5e1f5f",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "46c3fe334e5768f378db1fb2b3171867",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "de97797140f3237a32564b8e96fe838c",
+			"Name": "Room4",
+			"Transform": {
+				"Translation": {
+					"X": 1500.0,
+					"Y": 0.0,
+					"Z": 950.0
+				}
+			},
+			"Center": {
+				"X": 0.0,
+				"Y": 176.38775634765625,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "6e58791e40405a082da3ceb033d3baf7",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "46c3fe334e5768f378db1fb2b3171867",
+			"Name": "Door",
+			"Transform": {
+				"Translation": {
+					"X": -470.1524658203125,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Mode": 1,
+			"Size": {
+				"X": 100.0,
+				"Y": 300.0,
+				"Z": 150.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "f418d9fa4c64045cc1b57b88e3187e66",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "46c3fe334e5768f378db1fb2b3171867",
+			"Name": "Walls",
+			"Mode": 1,
+			"Center": {
+				"X": 0.0,
+				"Y": 164.91676330566406,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 900.0,
+				"Y": 575.717529296875,
+				"Z": 900.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "d5e49e8f4ea06f9d074eb0840e8b9f37",
+			"TypeName": "AmplitudeAudio.AmplitudeRoom",
+			"ParentID": "46c3fe334e5768f378db1fb2b3171867",
+			"Name": "RoomInstance4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 176.5582733154297,
+					"Z": 0.0
+				}
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"LeftWall": 3,
+			"RightWall": 3,
+			"Floor": 3,
+			"Ceiling": 3,
+			"FrontWall": 3,
+			"BackWall": 3
+		},
+		{
+			"ID": "a07f7c834d4f12b7a8dace9e9e44e83a",
+			"TypeName": "FlaxEngine.TextRender",
+			"ParentID": "46c3fe334e5768f378db1fb2b3171867",
+			"Name": "RoomName",
+			"Transform": {
+				"Translation": {
+					"X": -500.0958251953125,
+					"Y": 207.2628173828125,
+					"Z": -1.299560546875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				}
+			},
+			"Text": "Heavy Drapes",
+			"Color": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "4508d98f4aa1f0bd59362b81d47e38f4"
+		},
+		{
+			"ID": "9df5a16c4114b3fff95223915a616a7f",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "6a5916949644a6efca52f1ac25bbaae1",
+			"ParentID": "46c3fe334e5768f378db1fb2b3171867",
+			"Name": "FloatingSphereRoom4",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "aa78333842c6eb4a286578aa772c18a5",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "a0ad7d74ea40aae737b62085aff6980e",
+			"ParentID": "9df5a16c4114b3fff95223915a616a7f"
+		},
+		{
+			"ID": "cd9871794ede1e53809530b1b50b535c",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "534c41ef474e3a38f1ecfcb8c9680af5",
+			"ParentID": "9df5a16c4114b3fff95223915a616a7f",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "2628c33243e4ad0bcbb72aa80c9666e6",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "de97797140f3237a32564b8e96fe838c",
+			"Name": "Room5",
+			"Transform": {
+				"Translation": {
+					"X": 1500.0,
+					"Y": 0.0,
+					"Z": -100.0
+				}
+			},
+			"Center": {
+				"X": 0.0,
+				"Y": 176.38775634765625,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "911b662b4df3dd065118c9a08293821c",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "2628c33243e4ad0bcbb72aa80c9666e6",
+			"Name": "Door",
+			"Transform": {
+				"Translation": {
+					"X": -470.1524658203125,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Mode": 1,
+			"Size": {
+				"X": 100.0,
+				"Y": 300.0,
+				"Z": 150.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "f45aa3fe4b65a35957b8a093d31e286b",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "2628c33243e4ad0bcbb72aa80c9666e6",
+			"Name": "Walls",
+			"Mode": 1,
+			"Center": {
+				"X": 0.0,
+				"Y": 164.91676330566406,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 900.0,
+				"Y": 575.717529296875,
+				"Z": 900.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "f6214c6149e173faf429858f2169facb",
+			"TypeName": "AmplitudeAudio.AmplitudeRoom",
+			"ParentID": "2628c33243e4ad0bcbb72aa80c9666e6",
+			"Name": "RoomInstance5",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 176.5582733154297,
+					"Z": 0.0
+				}
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			}
+		},
+		{
+			"ID": "ad41f0164a4f3999bb358ca0bab1c3a4",
+			"TypeName": "FlaxEngine.TextRender",
+			"ParentID": "2628c33243e4ad0bcbb72aa80c9666e6",
+			"Name": "RoomName",
+			"Transform": {
+				"Translation": {
+					"X": -500.0958251953125,
+					"Y": 207.2628173828125,
+					"Z": -1.299560546875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				}
+			},
+			"Text": "Gypsum Board",
+			"Color": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "4508d98f4aa1f0bd59362b81d47e38f4"
+		},
+		{
+			"ID": "738184e74655cdae569e21a863f91168",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "6a5916949644a6efca52f1ac25bbaae1",
+			"ParentID": "2628c33243e4ad0bcbb72aa80c9666e6",
+			"Name": "FloatingSphereRoom5",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "e15086fd494f624e02d7cbae4cba1632",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "a0ad7d74ea40aae737b62085aff6980e",
+			"ParentID": "738184e74655cdae569e21a863f91168"
+		},
+		{
+			"ID": "a1c065c64b2cde6ad110e9a6ecd4b6cc",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "534c41ef474e3a38f1ecfcb8c9680af5",
+			"ParentID": "738184e74655cdae569e21a863f91168",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "e4f48e944eeebc2fdf4866802409f288",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "de97797140f3237a32564b8e96fe838c",
+			"Name": "Room6",
+			"Transform": {
+				"Translation": {
+					"X": 1500.0,
+					"Y": 0.0,
+					"Z": -1150.0
+				}
+			},
+			"Center": {
+				"X": 0.0,
+				"Y": 176.38775634765625,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "e0e7cf324205d123d774218621e3aa07",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "e4f48e944eeebc2fdf4866802409f288",
+			"Name": "Door",
+			"Transform": {
+				"Translation": {
+					"X": -470.1524658203125,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Mode": 1,
+			"Size": {
+				"X": 100.0,
+				"Y": 300.0,
+				"Z": 150.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "609080214ebd8c37d393eeb38254657f",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "e4f48e944eeebc2fdf4866802409f288",
+			"Name": "Walls",
+			"Mode": 1,
+			"Center": {
+				"X": 0.0,
+				"Y": 164.91676330566406,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 900.0,
+				"Y": 575.717529296875,
+				"Z": 900.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "779e80374bebfc7ad02772834763d0b5",
+			"TypeName": "AmplitudeAudio.AmplitudeRoom",
+			"ParentID": "e4f48e944eeebc2fdf4866802409f288",
+			"Name": "RoomInstance6",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 176.5582733154297,
+					"Z": 0.0
+				}
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"LeftWall": 5,
+			"RightWall": 5,
+			"Floor": 5,
+			"Ceiling": 5,
+			"FrontWall": 5,
+			"BackWall": 5
+		},
+		{
+			"ID": "34824ad84b0479c69b25e7824b740271",
+			"TypeName": "FlaxEngine.TextRender",
+			"ParentID": "e4f48e944eeebc2fdf4866802409f288",
+			"Name": "RoomName",
+			"Transform": {
+				"Translation": {
+					"X": -500.0958251953125,
+					"Y": 207.2628173828125,
+					"Z": -1.299560546875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				}
+			},
+			"Text": "Concrete Unpainted",
+			"Color": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "4508d98f4aa1f0bd59362b81d47e38f4"
+		},
+		{
+			"ID": "3e053d0c468de6209ad2cb943c4dccc0",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "6a5916949644a6efca52f1ac25bbaae1",
+			"ParentID": "e4f48e944eeebc2fdf4866802409f288",
+			"Name": "FloatingSphereRoom6",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "adc9d7bd4bae063a38b6c2b10677543f",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "a0ad7d74ea40aae737b62085aff6980e",
+			"ParentID": "3e053d0c468de6209ad2cb943c4dccc0"
+		},
+		{
+			"ID": "ec9dafa24ea85e1c3099c1a538b435e7",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "534c41ef474e3a38f1ecfcb8c9680af5",
+			"ParentID": "3e053d0c468de6209ad2cb943c4dccc0",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "c7e668494a2ea71ab1b87ea343a809c9",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "de97797140f3237a32564b8e96fe838c",
+			"Name": "Room7",
+			"Transform": {
+				"Translation": {
+					"X": 1500.0,
+					"Y": 0.0,
+					"Z": -2200.0
+				}
+			},
+			"Center": {
+				"X": 0.0,
+				"Y": 176.38775634765625,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "008e992c4aff367c0e0dd7a0fcaec9f7",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "c7e668494a2ea71ab1b87ea343a809c9",
+			"Name": "Door",
+			"Transform": {
+				"Translation": {
+					"X": -470.1524658203125,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Mode": 1,
+			"Size": {
+				"X": 100.0,
+				"Y": 300.0,
+				"Z": 150.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "f81704374c967d330a7954856d908744",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "c7e668494a2ea71ab1b87ea343a809c9",
+			"Name": "Walls",
+			"Mode": 1,
+			"Center": {
+				"X": 0.0,
+				"Y": 164.91676330566406,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 900.0,
+				"Y": 575.717529296875,
+				"Z": 900.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "b85d0b7d4064adeff0fc74a4b4a12f68",
+			"TypeName": "AmplitudeAudio.AmplitudeRoom",
+			"ParentID": "c7e668494a2ea71ab1b87ea343a809c9",
+			"Name": "RoomInstance7",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 176.5582733154297,
+					"Z": 0.0
+				}
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"LeftWall": 6,
+			"RightWall": 6,
+			"Floor": 6,
+			"Ceiling": 6,
+			"FrontWall": 6,
+			"BackWall": 6
+		},
+		{
+			"ID": "a5cb73d540a3f3799288bd8bf785a8fc",
+			"TypeName": "FlaxEngine.TextRender",
+			"ParentID": "c7e668494a2ea71ab1b87ea343a809c9",
+			"Name": "RoomName",
+			"Transform": {
+				"Translation": {
+					"X": -500.0958251953125,
+					"Y": 207.2628173828125,
+					"Z": -1.299560546875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				}
+			},
+			"Text": "Wood",
+			"Color": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "4508d98f4aa1f0bd59362b81d47e38f4"
+		},
+		{
+			"ID": "b44512194e8c206afbc8098bbbb7eb87",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "6a5916949644a6efca52f1ac25bbaae1",
+			"ParentID": "c7e668494a2ea71ab1b87ea343a809c9",
+			"Name": "FloatingSphereRoom7",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "72fe957a41be5d351f767da14d9284aa",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "a0ad7d74ea40aae737b62085aff6980e",
+			"ParentID": "b44512194e8c206afbc8098bbbb7eb87"
+		},
+		{
+			"ID": "1141874c417126b5956847b87172c5fd",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "534c41ef474e3a38f1ecfcb8c9680af5",
+			"ParentID": "b44512194e8c206afbc8098bbbb7eb87",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "25d2cf6b47a5f214c60fa58f572b1190",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "de97797140f3237a32564b8e96fe838c",
+			"Name": "Room8",
+			"Transform": {
+				"Translation": {
+					"X": 1500.0,
+					"Y": 0.0,
+					"Z": -3250.0
+				}
+			},
+			"Center": {
+				"X": 0.0,
+				"Y": 176.38775634765625,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "9a038ae0404c74846866138238b58763",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "25d2cf6b47a5f214c60fa58f572b1190",
+			"Name": "Door",
+			"Transform": {
+				"Translation": {
+					"X": -470.1524658203125,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Mode": 1,
+			"Size": {
+				"X": 100.0,
+				"Y": 300.0,
+				"Z": 150.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "62716d094edd498b5f2ad792f29b75d3",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "25d2cf6b47a5f214c60fa58f572b1190",
+			"Name": "Walls",
+			"Mode": 1,
+			"Center": {
+				"X": 0.0,
+				"Y": 164.91676330566406,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 900.0,
+				"Y": 575.717529296875,
+				"Z": 900.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "ae90329a41a5df3c70d19ea5b5ff30ce",
+			"TypeName": "AmplitudeAudio.AmplitudeRoom",
+			"ParentID": "25d2cf6b47a5f214c60fa58f572b1190",
+			"Name": "RoomInstance8",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 176.5582733154297,
+					"Z": 0.0
+				}
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"LeftWall": 7,
+			"RightWall": 7,
+			"Floor": 7,
+			"Ceiling": 7,
+			"FrontWall": 7,
+			"BackWall": 7
+		},
+		{
+			"ID": "7aaded614a5fe0010b42379e2997cbd8",
+			"TypeName": "FlaxEngine.TextRender",
+			"ParentID": "25d2cf6b47a5f214c60fa58f572b1190",
+			"Name": "RoomName",
+			"Transform": {
+				"Translation": {
+					"X": -500.0958251953125,
+					"Y": 207.2628173828125,
+					"Z": -1.299560546875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				}
+			},
+			"Text": "Brick Painted",
+			"Color": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "4508d98f4aa1f0bd59362b81d47e38f4"
+		},
+		{
+			"ID": "53a4d6e1447c902b84203bbb0032923f",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "6a5916949644a6efca52f1ac25bbaae1",
+			"ParentID": "25d2cf6b47a5f214c60fa58f572b1190",
+			"Name": "FloatingSphereRoom8",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "f719d53c4d6c4008087f5598f081181b",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "a0ad7d74ea40aae737b62085aff6980e",
+			"ParentID": "53a4d6e1447c902b84203bbb0032923f"
+		},
+		{
+			"ID": "846a4be64873b9de59d391a9e455075f",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "534c41ef474e3a38f1ecfcb8c9680af5",
+			"ParentID": "53a4d6e1447c902b84203bbb0032923f",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "b449bacd41a2289a855cc5a7abb4d4f4",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "de97797140f3237a32564b8e96fe838c",
+			"Name": "Room9",
+			"Transform": {
+				"Translation": {
+					"X": 1500.0,
+					"Y": 0.0,
+					"Z": -4300.0
+				}
+			},
+			"Center": {
+				"X": 0.0,
+				"Y": 176.38775634765625,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "36cf9b604700ba3096230fbb5ddfc5f0",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "b449bacd41a2289a855cc5a7abb4d4f4",
+			"Name": "Door",
+			"Transform": {
+				"Translation": {
+					"X": -470.1524658203125,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Mode": 1,
+			"Size": {
+				"X": 100.0,
+				"Y": 300.0,
+				"Z": 150.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "d378ae88494d5864353dd684d6927040",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "b449bacd41a2289a855cc5a7abb4d4f4",
+			"Name": "Walls",
+			"Mode": 1,
+			"Center": {
+				"X": 0.0,
+				"Y": 164.91676330566406,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 900.0,
+				"Y": 575.717529296875,
+				"Z": 900.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "580901944f13fee9eb760682d93983b2",
+			"TypeName": "AmplitudeAudio.AmplitudeRoom",
+			"ParentID": "b449bacd41a2289a855cc5a7abb4d4f4",
+			"Name": "RoomInstance9",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 176.5582733154297,
+					"Z": 0.0
+				}
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"LeftWall": 8,
+			"RightWall": 8,
+			"Floor": 8,
+			"Ceiling": 8,
+			"FrontWall": 8,
+			"BackWall": 8
+		},
+		{
+			"ID": "8a648c1e4eb2175bde193f88e6ddffc3",
+			"TypeName": "FlaxEngine.TextRender",
+			"ParentID": "b449bacd41a2289a855cc5a7abb4d4f4",
+			"Name": "RoomName",
+			"Transform": {
+				"Translation": {
+					"X": -500.0958251953125,
+					"Y": 207.2628173828125,
+					"Z": -1.299560546875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7071068286895752,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				}
+			},
+			"Text": "Foam Panel",
+			"Color": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"Material": "e72782bd4d898e2f236ca3be780438af",
+			"Font": "4508d98f4aa1f0bd59362b81d47e38f4"
+		},
+		{
+			"ID": "3112a8a24a9691a10dc94290ae45a1d2",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "6a5916949644a6efca52f1ac25bbaae1",
+			"ParentID": "b449bacd41a2289a855cc5a7abb4d4f4",
+			"Name": "FloatingSphereRoom9",
+			"StaticFlags": 31
+		},
+		{
+			"ID": "527b7aaa40330b4a048da785559f83e7",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "a0ad7d74ea40aae737b62085aff6980e",
+			"ParentID": "3112a8a24a9691a10dc94290ae45a1d2"
+		},
+		{
+			"ID": "606c729e4133be10a40f0e8b9df0d9d3",
+			"PrefabID": "9ceb7f0e5f46fa6365d433bdbfb274ae",
+			"PrefabObjectID": "534c41ef474e3a38f1ecfcb8c9680af5",
+			"ParentID": "3112a8a24a9691a10dc94290ae45a1d2",
+			"StaticFlags": 31
 		},
 		{
 			"ID": "5bbc73f948660c2dc880fe9d717289d2",
@@ -215,60 +1627,6 @@
 			"ID": "8f16ceaf452c9d13077098bb5d128f85",
 			"TypeName": "AmplitudeAudio.AmplitudeObstruction",
 			"ParentID": "313819f4495141dfe7e10999a59615ca"
-		},
-		{
-			"ID": "8addee9e44dd1897144884bdfd06a543",
-			"TypeName": "AmplitudeAudio.AmplitudeEntity",
-			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
-			"Name": "HubFloatingSphere",
-			"Transform": {
-				"Translation": {
-					"X": 2046.8404541015625,
-					"Y": 0.0,
-					"Z": 0.0
-				}
-			},
-			"StaticFlags": 0,
-			"ObstructionMode": 2
-		},
-		{
-			"ID": "c798e41041453c17e88252a837c8244b",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "8addee9e44dd1897144884bdfd06a543",
-			"Name": "Model",
-			"StaticFlags": 0,
-			"Model": "e573d5ca49210c5230e55ea7405519c8",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "85bdfe384bfa7baa7204b9b47b105c2b",
-			"TypeName": "AmplitudeAudio.AmplitudeEmitter",
-			"ParentID": "c798e41041453c17e88252a837c8244b",
-			"Name": "hub_floating_ball",
-			"SoundObject": {
-				"ID": 97945395518707218
-			},
-			"AutoPlay": 2
-		},
-		{
-			"ID": "03d8937e4d063f41230d60aa806a6439",
-			"TypeName": "AmplitudeAudio.AmplitudeEvent",
-			"ParentID": "c798e41041453c17e88252a837c8244b",
-			"Enabled": false,
-			"Event": {
-				"ID": 325538012769467821
-			},
-			"AutoTrigger": 2,
-			"CancelOnDisable": false
 		}
 	]
 }
