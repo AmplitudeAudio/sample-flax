@@ -15,6 +15,11 @@
 				"CompressLightmaps": true,
 				"UseGeometryWithNoMaterials": true,
 				"Quality": 10
+			},
+			"CSG": {
+				"Model": "d37cb7164ff16452df17468df966f823",
+				"Data": "0ede5a8a4d1f63d540ce1db64a2121bd",
+				"CollisionData": "f073ff714d185cb573a470a6f8635f2a"
 			}
 		},
 		{
@@ -186,6 +191,107 @@
 			]
 		},
 		{
+			"ID": "7438e08e4468685abed1a2b3fd0e1afe",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "de97797140f3237a32564b8e96fe838c",
+			"Name": "Room1",
+			"Transform": {
+				"Translation": {
+					"X": 1500.0,
+					"Y": 0.0,
+					"Z": 1500.0
+				}
+			},
+			"Center": {
+				"X": 0.0,
+				"Y": 176.38775634765625,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "83fab9c74e552f5e09be8e89ea301c6e",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "7438e08e4468685abed1a2b3fd0e1afe",
+			"Name": "Door",
+			"Transform": {
+				"Translation": {
+					"X": -470.1524658203125,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Mode": 1,
+			"Size": {
+				"X": 100.0,
+				"Y": 300.0,
+				"Z": 150.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "7947cc7a4212e5576f7edaa10ea6136b",
+			"TypeName": "FlaxEngine.BoxBrush",
+			"ParentID": "7438e08e4468685abed1a2b3fd0e1afe",
+			"Name": "Walls",
+			"Mode": 1,
+			"Center": {
+				"X": 0.0,
+				"Y": 164.91676330566406,
+				"Z": 0.0
+			},
+			"Size": {
+				"X": 900.0,
+				"Y": 575.717529296875,
+				"Z": 900.0
+			},
+			"Surfaces": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"ID": "5e4413e64cf92f80cf4fa0876f3f3305",
+			"TypeName": "AmplitudeAudio.AmplitudeRoom",
+			"ParentID": "7438e08e4468685abed1a2b3fd0e1afe",
+			"Name": "RoomInstance",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 176.5582733154297,
+					"Z": 0.0
+				}
+			},
+			"Size": {
+				"X": 1000.0,
+				"Y": 652.7755126953125,
+				"Z": 1000.0
+			}
+		},
+		{
 			"ID": "5bbc73f948660c2dc880fe9d717289d2",
 			"TypeName": "FlaxEngine.StaticModel",
 			"ParentID": "b32e41e947cae7a6b727909c4d199f9a",
@@ -223,9 +329,9 @@
 			"Name": "HubFloatingSphere",
 			"Transform": {
 				"Translation": {
-					"X": 2046.8404541015625,
+					"X": 206.93048095703125,
 					"Y": 0.0,
-					"Z": 0.0
+					"Z": 1567.0606689453125
 				}
 			},
 			"StaticFlags": 0,
